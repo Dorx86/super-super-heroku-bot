@@ -56,10 +56,10 @@ app.get("/lastmessage", function (request, response) {
   //console.log(channelobj);
   channelobj.fetchMessage(channelobj.lastMessageID)
   .then(function(message){
-    console.log(message);
+    //console.log(message);
     response.send({
       //channel:message.channel,
-      id:message.id,
+      //id:message.id,
       //member:message.member,
       author:message.author,
       content:message.content
