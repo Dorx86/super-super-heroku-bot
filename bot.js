@@ -4,7 +4,6 @@
 // init project
 var express = require('express');
 var bodyParser = require("body-parser");
-var Jimp = require('jimp');
 var app = express();
 
 // we've started you off with Express,
