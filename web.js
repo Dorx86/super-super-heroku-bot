@@ -28,7 +28,7 @@ bot.on("ready", () => {
 app.use(bodyParser.urlencoded( {extended: false }));
 app.use(bodyParser.json());
 // http://expressjs.com/en/starter/basic-routing.html
-const hook = new Discord.WebhookClient('269906337620688897','g1vigCQ2YOe3Qtg7lNKItA9iWSj33k2MV8ovfuxvrttGE9oLrNiKqMUM8pzaeUOJakUk');
+const hook = new Discord.WebhookClient('366295483095842818','UHoemoF1Efr7hH8IBCDipoaUyNZ_mJUEeEW6_wT2794HsmplH9XQHqS9yLVGPUJDTq0U');
 app.post("/", function (request, response) {
   //response.sendFile(__dirname + '/views/index.html');
   //console.log(request.headers);
