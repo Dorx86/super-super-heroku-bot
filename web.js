@@ -58,10 +58,10 @@ app.get("/lastmessage", function (request, response) {
   .then(function(message){
     console.log(message);
     response.send({
-      channel:message.channel,
-      id:message.id,
-      member:message.member,
-      author:message.author,
+      //channel:message.channel,
+      //id:message.id,
+      //member:message.member,
+      //author:message.author,
       content:message.content
     });
   })
