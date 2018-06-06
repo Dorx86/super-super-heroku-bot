@@ -100,7 +100,6 @@ app.get("/lastmessage", function (request, response) {
   })
   .catch(console.error);
 });
-var things = require("./thing.js");
 
 bot.login(process.env.BOT_TOKEN);
 
