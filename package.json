@@ -4,7 +4,8 @@
   "version": "0.0.0",
   "main": "bot.js",
   "scripts": {
-    "start": "node bot.js"
+    "start": "node bot.js",
+    "webstart": "node web.js"
   },
   "dependencies": {
     "discord.js": "^11.3.2",
