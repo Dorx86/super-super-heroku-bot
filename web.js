@@ -59,9 +59,9 @@ app.get("/lastmessage", function (request, response) {
     console.log(message);
     response.send({
       //channel:message.channel,
-      //id:message.id,
+      id:message.id,
       //member:message.member,
-      //author:message.author,
+      author:message.author,
       content:message.content
     });
   })
