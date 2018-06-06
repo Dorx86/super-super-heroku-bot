@@ -1,6 +1,6 @@
 // server.js
 // where your node app starts
-
+var port = Number(process.env.PORT || 8000);
 // init project
 var express = require('express');
 var bodyParser = require("body-parser");
@@ -10,7 +10,10 @@ var app = express();
 // but feel free to use whatever libs or frameworks you'd like through `package.json`.
 
 // http://expressjs.com/en/starter/static-files.html
-app.use(express.static('public'));
+app.use(express.static(__dirname + '/app'));
+var server = app.listen(port, function() {
+    console.log('Listening on port %d', server.address().port);
+});
 
 const Discord = require("discord.js");
 const fs = require("fs");
