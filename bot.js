@@ -62,7 +62,7 @@ bot.on("message", async message => {
   }
 
   let xpAdd = Math.floor(Math.random() * 7) + 8;
-  console.log(xpAdd);
+  //console.log(xpAdd);
 
   if(!xp[message.author.id]){
     xp[message.author.id] = {
