@@ -72,7 +72,7 @@ app.post("/", function (request, response) {
   console.log("test");
   let msg = request.body.msg;
   hook.send(msg,{
-    username:request.body.username;
+    username:request.body.username,
     avatarURL:request.body.avatarURL
   }).then(function(){
     console.log("message sent");
